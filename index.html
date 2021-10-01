@@ -3,72 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Yan Nerovnyi | CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img alt="myPhoto" src="avatar.jpg" width="200">
-    <h1>Ян Неровный</h1>
-    <p><em><strong>Frontend Engineer</strong></em></p>
-    <p> Увлекаюсь философией, экономикой, астрофизикой и технологиями</p>
-    <hr>
-    <h2>Мои контакты</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/exciting-opportunities/" target="_blank">Linkedin</a></li>
-        <li><a href="https://t.me/exciting_opportunities" target="_blank">Telegram</a></li>
-        <li><a href="https://github.com/exciting-opportunities" target="_blank">Github</a></li>
-        <li><a href="https://vk.com/exciting_opportunities" target="_blank">Vk</a></li>
-        <li><a href="https://www.instagram.com/virginity8/" target="_blank">Instagram</a></li>
-    </ul>
-    <hr>
-    <h2>Стек используемых технологий</h2>
-    <ol>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Redux</li>
-    </ol>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2021-now</td>
-        </tr>
-        <tr>
-            <td>Лига Цифровой Экономики</td>
-            <td>Software Engineer</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>Websoft</td>
-            <td>JavaScript Developer</td>
-            <td>2020-2021</td>
-        </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h2>My pet projects</h2>
-    <a href="my-pet-projects.html">Посмотреть</a>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input id="name" placeholder="Введите имя" type="text">
-        <br>
-        <label for="email">Ваш Email</label>
-        <input id="email" placeholder="Введите email" type="text">
-        <br>
-        <label for="text">Ваше сообщение</label>
-        <textarea id="text" placeholder="Введите текст" type="text"></textarea>
-        <br>
-        <input type="submit" value="Связаться">
-    </form>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" alt="myPhoto" src="avatar.jpg">
+            <div class="info-text">
+                <h1>Ян Неровный</h1>
+                <p><strong>Middle Frontend Engineer</strong></p>
+                <p> Увлекаюсь философией, экономикой, астрофизикой и технологиями</p>
+
+                <h4>Мои контакты</h4>
+                <a href="https://www.linkedin.com/in/exciting-opportunities/" target="_blank">Linkedin</a>
+                |
+                <a href="https://t.me/exciting_opportunities" target="_blank">Telegram</a>
+                |
+                <a href="https://github.com/exciting-opportunities" target="_blank">Github</a>
+                |
+                <a href="https://vk.com/exciting_opportunities" target="_blank">Vk</a>
+                |
+                <a href="https://www.instagram.com/virginity8/" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <div class="card bg-yellow">
+            <h2>Стек используемых технологий</h2>
+            <ol class="list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Redux</li>
+            </ol>
+        </div>
+
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>EPAM Systems</td>
+                    <td>Middle Software Engineer</td>
+                    <td>2021-now</td>
+                </tr>
+                <tr>
+                    <td>Лига Цифровой Экономики</td>
+                    <td>Software Engineer</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Websoft</td>
+                    <td>JavaScript Developer</td>
+                    <td>2020-2021</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card bg-red">
+            <h2>My pet projects</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://github.com/exciting-opportunities/React-App-GameOfThrones">React-App-GameOfThrones</a>
+                </li>
+                <li>
+                    <a href="https://github.com/exciting-opportunities/React-App-MiniFacebook">React-App-MiniFacebook</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input id="name" placeholder="Введите имя" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input id="email" placeholder="Введите email" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text"></textarea>
+                </div>
+                <input  class="btn" type="submit" value="Связаться">
+            </form>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
